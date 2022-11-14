@@ -224,14 +224,13 @@ footer{
 .right-side{
     width: 25%;
     background-color: rgba(0, 0, 0, 0.6);
-    
     padding: 2%;
 }
 
 .about-description img{
-    width: clamp(100px, 11vw, 450px);
+    width: 50%;
     float: left;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px;
 }
 .right-side p{
     margin-top: 7%;
