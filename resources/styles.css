@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body, html, main{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/main.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 50px);
+}
+
+/* Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0 50px;
+}
+
+.logo-text{
+    display: flex;
+    align-items: center;
+    font-size: clamp(2px, 1.5vw, 12px);
+}
+
+.logo{
+    height: 50px;
+    padding-right: 10px;
+}
+
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    margin-left: 10px;
+    padding: 15px 0;
+    width: clamp(50px, 10vw, 100px);
+    font-size: clamp(14px, 1vw, 23px);
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: rgba(212, 207, 207, 0.5);
+    color: black;
+    transition: all 0.4s ease-out;
+}
+
+/* Main Section */
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 2;
+    padding: 60px 0;
+}
+
+.main-section h1{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+.boxes{
+    display: flex;
+    height: 75%;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.box{
+    height: calc(80% - 22px);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.box a{
+    height: calc(100% - 22px);
+    width: 90%;
+}
+
+.box h3{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+}
+
+.box-image{
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about{
+    background-image: url(../images/aboutme.jpeg)
+}
+
+.portofolio{
+    background-image: url(../images/portofolio.jpeg);
+}
+
+.contact{
+    background-image: url(../images/contact.jpeg)
+}
+
+/* Footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-boxes{
+    display: flex;
+}
+
+.social-box{
+    margin-left: 10px;
+}
+
+.social-box a{
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-box a:hover{
+    background-color: rgba(212, 207, 207, 0.5);
+    color: black;
+    transition: all 0.4s ease-out;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.facebook-icon{
+    background-image: url(../images/social-images/facebookicon-white.png);
+}
+
+.social-box a:hover .facebook-icon{
+    background-image: url(../images/social-images/facebookicon.png);
+    transition: all 0.4s ease-out;
+}
+
+.instagram-icon{
+    background-image: url(../images/social-images/instagramicon-white.png);
+}
+
+.social-box a:hover .instagram-icon{
+    background-image: url(../images/social-images/instagramicon.png);
+    transition: all 0.4s ease-out;
+}
