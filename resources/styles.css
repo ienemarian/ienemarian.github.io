@@ -32,10 +32,6 @@ main{
     flex-grow: 2;
 }
 
-main *{
-    transition: all 0.2s ease-in-out;
-}
-
 .selected{
     background-color: rgba(212, 207, 207, 0.5);
     color: black;
@@ -274,6 +270,7 @@ footer{
 .contact-right-side{
     background-color: rgba(0, 0, 0, 0.6);
     padding: 2%;
+    width: 50%;
 }
 
 .contact-right-side h1, .contact-right-side p{
@@ -289,15 +286,63 @@ footer{
     padding: 30px 0;
 }
 
-.separator{
+.bottom, .top{
     display: flex;
+    flex-wrap: wrap;
+}
+.bottom{
+    margin-top: 2%;
 }
 
 .email-span{
     text-decoration: underline;
 }
 
+.contact-text{
+    font-size: 20px;
+}
 
+.label-input-wrapper{
+    margin-right: 20px;
+}
+
+.label-input-wrapper input, .label-input-wrapper textarea{
+    background-color: rgba(212, 207, 207, 0.5);
+    border: 0;
+}
+
+.label-input-wrapper input{
+    height: clamp(20px, 2vw, 50px);
+}
+
+.label-input-wrapper ::placeholder {
+    color: black;
+    opacity: 0.8;
+    font-size: 15px;
+    padding-left: 10px;
+ }
+ .bottom .label-input-wrapper{
+    width: 48%;
+ }
+
+.label-input-wrapper textarea{
+    width: 100%;
+    margin: 0;
+}
+
+.submit-button-wrapper{
+    display: flex;
+    align-items: flex-end;
+}
+.submit-button-wrapper button{
+    width: 160.2px;
+    height: 18%;
+    border: none;
+    background-color: rgba(212, 207, 207, 0.5);
+    color: black;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
 
 
 .contact-left-side{
