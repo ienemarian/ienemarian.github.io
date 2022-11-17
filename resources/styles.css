@@ -290,6 +290,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
 }
+
 .bottom{
     margin-top: 2%;
 }
@@ -303,7 +304,8 @@ footer{
 }
 
 .label-input-wrapper{
-    margin-right: 20px;
+    margin-right: 17px;
+    width: 50%;
 }
 
 .label-input-wrapper input, .label-input-wrapper textarea{
@@ -313,30 +315,37 @@ footer{
 
 .label-input-wrapper input{
     height: clamp(20px, 2vw, 50px);
+    width: 100%;
+    padding-left: 10px;
 }
 
 .label-input-wrapper ::placeholder {
     color: black;
     opacity: 0.8;
     font-size: 15px;
-    padding-left: 10px;
  }
+
  .bottom .label-input-wrapper{
-    width: 48%;
+    width: 100%;
+    margin-right: 20px;
  }
 
 .label-input-wrapper textarea{
     width: 100%;
-    margin: 0;
+    margin: 0 ;
+    padding-top: 10px;
+    padding-left: 10px;
 }
 
 .submit-button-wrapper{
     display: flex;
     align-items: flex-end;
+    width: 100%;
 }
+
 .submit-button-wrapper button{
-    width: 160.2px;
-    height: 18%;
+    width: 50%;
+    height: 20%;
     border: none;
     background-color: rgba(212, 207, 207, 0.5);
     color: black;
@@ -344,6 +353,16 @@ footer{
     margin-bottom: 3px;
 }
 
+.submit-button-wrapper button:hover{
+    cursor: pointer;
+    border: 2px solid white;
+    color: white;
+}
+
+.separator-left, .separator-right{
+    display: flex;
+    width: 50%;
+}
 
 .contact-left-side{
     background-color: rgba(0, 0, 0, 0.6);
