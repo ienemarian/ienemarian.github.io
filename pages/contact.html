@@ -23,52 +23,56 @@
     </header>
     <main>
         <section class="contact-section">
-            <div class="contact-right-side">
-                <h1>Contact</h1>
-                <p class="contact-text">You can contact me on email at <span class="email-span">nicusor.popa00@e-uvt.ro</span> or write a message down below:</p>
-                <div class="top">
-                    <div class="separator-left">
-                        <div class="label-input-wrapper">
-                            <label for="first-name">First name</label>
-                            <div class="input-wrapper">
-                                <i class="fa-solid fa-user icon-position"></i>
-                                <input id="first-name" type="text" placeholder="Enter your first name">
+            
+            <!-- HTML form -->
+            <form method="post" action="../resources/send-email.php">
+                <div class="contact-right-side">
+                    <h1>Contact</h1>
+                    <p class="contact-text">You can contact me on email at <span class="email-span">nicusor.popa00@e-uvt.ro</span> or write a message down below:</p>
+                    <div class="top">
+                        <div class="separator-left">
+                            <div class="label-input-wrapper">
+                                <label for="first-name">First name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user icon-position"></i>
+                                    <input id="first-name" type="text" name="First_Name" placeholder="Enter your first name">
+                                </div>
+                            </div>
+                            <div class="label-input-wrapper">
+                                <label for="last-name">Last name</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input id="last-name" type="text" name="Last_Name" placeholder="Enter your last name">
+                                </div>
                             </div>
                         </div>
-                        <div class="label-input-wrapper">
-                            <label for="last-name">Last name</label>
-                            <div class="input-wrapper">
-                                <i class="fa-solid fa-user"></i>
-                                <input id="last-name" type="text" placeholder="Enter your last name">
+                        <div class="separator-right">
+                            <div class="label-input-wrapper">
+                                <label for="email">Email</label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <input id="email" type="email" name="Email" placeholder="Enter your email">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="separator-right">
-                        <div class="label-input-wrapper">
-                            <label for="email">Email</label>
-                            <div class="input-wrapper">
-                                <i class="fa-solid fa-envelope"></i>
-                                <input id="email" type="text" placeholder="Enter your email">
+                    <div class="bottom">
+                        <div class="separator-left">
+                            <div class="label-input-wrapper">
+                                <label for="message">Message</label>
+                                <div class="input-wrapper">
+                                    <textarea id="message" name="Message" cols="10" rows="10" placeholder="Enter your message here"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator-right">
+                            <div id="submit-button" class="submit-button-wrapper">
+                                <button type="submit">Submit</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bottom">
-                    <div class="separator-left">
-                        <div class="label-input-wrapper">
-                            <label for="message">Message</label>
-                            <div class="input-wrapper">
-                                <textarea id="message" cols="10" rows="10" placeholder="Enter your message here"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="separator-right">
-                        <div class="submit-button-wrapper">
-                            <button type="submit">Submit</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
             <div class="contact-left-side">
                 <h3>You can also contact me on my socials</h3>
                 <div><p><div class="icon instagram-icon"></div>Instagram: <a href="https://www.instagram.com/pnaalex/" target="_blank">https://www.instagram.com/pnaalex/</a></p></div>
